@@ -51,6 +51,7 @@ Item {
                     "ScreenOutputNode": "ScreenOutputNodeTile",
                     "FFmpegOutputNode": "FFmpegOutputNodeTile",
                     "PlaceholderNode": "PlaceholderNodeTile",
+                    "HueOutputNode": "HueTile",
                     "KineticsStripOutputNode": "KineticsStripTile",
                     "KineticsPanel72OutputNode": "KineticsPanel72Tile",
                     "": "VideoNodeTile"

@@ -41,12 +41,14 @@ list(APPEND libradiance_SOURCES
     src/Chain.cpp
     src/Context.cpp
     src/Controls.cpp
+    src/DtlsAssociation.cpp
     src/ConsoleOutputNode.cpp
     src/EffectNode.cpp
     src/FFmpegOutputNode.cpp
     src/FramebufferVideoNodeRender.cpp
     src/GraphicalDisplay.cpp
     src/ImageNode.cpp
+    src/HueOutputNode.cpp
     src/KineticsStripOutputNode.cpp
     src/KineticsPanel72OutputNode.cpp
     src/Library.cpp

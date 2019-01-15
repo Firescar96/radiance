@@ -10,6 +10,7 @@
 #include "FFmpegOutputNode.h"
 #include "PlaceholderNode.h"
 #include "ConsoleOutputNode.h"
+#include "HueOutputNode.h"
 #include "KineticsStripOutputNode.h"
 #include "KineticsPanel72OutputNode.h"
 
@@ -23,6 +24,7 @@ Registry::Registry()
     registerType<FFmpegOutputNode>();
     registerType<PlaceholderNode>();
     registerType<ConsoleOutputNode>();
+    registerType<HueOutputNode>();
     registerType<KineticsStripOutputNode>();
     registerType<KineticsPanel72OutputNode>();
 

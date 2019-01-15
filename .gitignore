@@ -10,3 +10,4 @@ src/CMake*
 resources/models/*.json
 !resources/models/cli.json
 !resources/models/gui_default.json
+radiance

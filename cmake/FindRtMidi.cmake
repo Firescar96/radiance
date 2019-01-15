@@ -1,11 +1,21 @@
 # Try to find RtMidi library, once done this will define:
 #
-#  RTMIDI_FOUND - if RtMidi has been found 
+#  RTMIDI_FOUND - if RtMidi has been found
 #  RTMIDI_INCLUDE_DIR - the RtMidi include directory
 #  RTMIDI_LIBRARIES - libraries to link against to use RtMidi
 
 find_path(RTMIDI_INCLUDE_DIR RtMidi.h HINTS ${RTMIDI_DIR} PATH_SUFFIXES rtmidi)
-find_library(RTMIDI_LIBRARY NAMES librtmidi.a rtmidi HINTS ${RTMIDI_DIR})
+#find_path(RTMIDI_INCLUDE_DIR NAMES RtMidi.h PATHS /usr/include /usr/local/include /opt/local/include /sw/include)
+find_library(RTMIDI_LIBRARY
+  NAMES
+    rtmidi
+  PATHS
+    /usr/lib
+    /usr/local/lib
+    /opt/local/lib
+    /sw/lib
+)
+#find_library(RTMIDI_LIBRARY NAMES librtmidi.a rtmidi HINTS ${RTMIDI_DIR})
 
 # On Mac OS we have to add framworks RtMidi depends on
 if (RTMIDI_LIBRARY AND APPLE)

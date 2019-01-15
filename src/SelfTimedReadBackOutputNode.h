@@ -5,6 +5,7 @@
 #include "OutputNode.h"
 #include "OpenGLWorkerContext.h"
 #include "OpenGLWorker.h"
+#include <QNetworkAccessManager>
 
 // This class is a base class for
 // writing your own simple outputs.
@@ -44,7 +45,7 @@ class SelfTimedReadBackOutputNode
 
 public:
     SelfTimedReadBackOutputNode(Context *context, QSize chainSize, long msec=0);
-        SelfTimedReadBackOutputNode(SelfTimedReadBackOutputNodePrivate *other, Context *context, QSize chainSize, long msec=0);
+    SelfTimedReadBackOutputNode(SelfTimedReadBackOutputNodePrivate *other, Context *context, QSize chainSize, long msec=0);
     SelfTimedReadBackOutputNode(const SelfTimedReadBackOutputNode &other);
     SelfTimedReadBackOutputNode *clone() const override;
 
