@@ -105,7 +105,9 @@ VideoNode *HueOutputNode::deserialize(Context *context, QJsonObject obj) {
 
     e->d()->m_parameters = new QJsonObject({
       {"username", obj.value("username").toString()},
+      {"secret", obj.value("secret").toString()},
       {"width", obj.value("width").toString()},
+      {"group", obj.value("group").toString()},
       {"host", obj.value("host").toString()},
     });
 
